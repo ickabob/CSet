@@ -1,0 +1,33 @@
+
+* CSET SRC
+  - [X] setNew.c  ?? What is this src file for?
+    
+  - [X] setInit.c
+    
+  - [X] setDestroy.c
+    
+  - [X] setSize.c
+    
+  - [X] setGet.c
+    
+  - [X] setUnion.c
+    * The union of set A and set B is
+      {x | x exists in A || x exists in B}
+      
+  - [ ] setIntersection.c
+    * The intersection of set A and set B is
+      {x | x exists in A  &&  x exists in B}
+    
+  - [X] setIsElement.c
+    
+  - [X] setIsEqual.c
+    * A set A is equal to a set B iff A is a proper subset of B and
+      B is a proper subset of A.
+      
+  - [X] setIsSubset.c
+    * A set A is a proper subset of a set B iff every element that exists
+      in A also exists in B.
+      
+  - [X] setIsEmpty.c
+    *A set A is empty iff the only element x in A is the NULL set.
+

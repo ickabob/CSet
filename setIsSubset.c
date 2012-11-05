@@ -19,8 +19,12 @@ setIsSubset(Set set1, Set set2){
   setp = set1;
   for (setp = set1; setp->next != NULL; setp = setp->next){
     e = setp->element;
+#ifdef DEBUG
+    debug("checking for existence of %s in Set at memory address %p.", e, (void*)setp);
+#endif
     if(!setIsElement(e,set2))
       return 0;  //an element in set1 does not exist in set2.
+
   }
   //all elements e in set1 exist in set2.
   return 1;

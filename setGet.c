@@ -1,3 +1,4 @@
+#include <stdlib.h>
 
 #include "set.h"
 #include "dbg.h"
@@ -16,14 +17,13 @@ setGet(Element elements[], Set set){
     return -1;
   i = 0;
   for (setp = set; setp->next != NULL; setp = setp->next){
-    ++i;
     nchars = strlen(setp->element) + 1;
     e = malloc(nchars);
     strncpy(e, setp->element, nchars);
 #ifdef DEBUG
     debug("extracting %s to element[%d]", e, i);
 #endif
-    elements[i] = e;
+    elements[i++] = e;
   }
   return 0;
 }

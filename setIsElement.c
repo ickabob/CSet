@@ -7,7 +7,8 @@ int
 setIsElement(Element element, Set set2){
   /* Ian write a doc string dummy.
    */
-  int i,nchars;
+  int i;
+  size_t nchars;
   Element e;
   Set setp;
 

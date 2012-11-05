@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include "set.h"
+
 
 int
 setIsEqual(Set set1, Set set2){

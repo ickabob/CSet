@@ -21,10 +21,10 @@ setInit(Set *set, Element elements[]){
     complications when trying to convert to strings.
    */
   memset((void*)setp, 0 , sizeof(setElement));
-  *set = setp;
+  *set = setp; 
   i = 0;
   for (e = elements[i]; e != NULL; e = elements[++i]){
-    /*maybe just memcopy '\0' into the new struct to ensure initialization.*/
+    /*next 2 lines are redundent.*/
     setp->next = NULL;
     setp->element = NULL;
     nchars = strlen(e) + 1;
@@ -33,12 +33,15 @@ setInit(Set *set, Element elements[]){
 #ifdef DEBUG
     debug("(%p,%p,%d,%s)", (void*)setp, (void*)prev_setp, (int)nchars, e);
 #endif
+    /*get heap memory for string and copy string into new memory*/
     setp->element = malloc(nchars);
     strncpy(setp->element, e, nchars);
+    /*point previous to current and ask for a new current.*/
     prev_setp = setp;
-    setp  = malloc(sizeof(setElement));
+    setp = malloc(sizeof(setElement));
+    /*hook new element onto next of previous.*/
     prev_setp->next = setp;
-  }
+  } 
 #ifdef DEBUG
   setDisplay(*set);
 #endif

@@ -1,0 +1,36 @@
+CS 454 
+Fall 2012
+Assingment 1 : C programming review
+
+In this assignment you are to work in small teams
+to produce a simple library of function that provide 
+set opeatons using a linked list data structure.
+
+You are to use the header set.h provided. If you 
+want to change it, ask first.
+Your library is to ba called libset.a (a static link 
+library)
+
+There will be a "more significant" test 
+program than test_set.c next week.
+
+Outcomes:
+1) Review basic C programing
+2) Understand the proper use of .h files
+3) Understand how to build a static libtrary from .o files
+4) UNderstand the difference between static and shared object libraries
+5) UNderstand typedefs, structures, pointers and arrays
+6) Understand passing arguements in C
+7) Understwsand malloc() and free(). 
+8) Understand simple Makefiles
+
+Although you are to work on teams, every person
+is expected up experiment wih the coding and fully
+understand the final results. You will be aksed about
+it.
+
+I encourage you to use constructs such as:
+#ifdef DEBUG
+  ...
+#endid
+to help trace and and debug your code.

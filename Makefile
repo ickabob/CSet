@@ -16,6 +16,9 @@ ${OBJS}: set.h dbg.h
 test_set: test_set.c set.h libset.a
 	${CC} ${CFLAGS} -o test_set test_set.c libset.a
 
+sandbox: sandbox.c set.h libset.a
+	${CC} ${CFLAGS} -o sandbox sandbox.c libset.a
+
 libset.a: ${OBJS} set.h
 	ar -r libset.a $?
 	ranlib libset.a
