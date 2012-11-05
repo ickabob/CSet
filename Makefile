@@ -1,11 +1,11 @@
 CFLAGS= -Wall -pedantic -std=gnu99 -g
 CC= gcc
 
-SRCS = setNew.c setInit.c setDestroy.c setSize.c setGet.c \
+SRCS = setDisplay.c setInit.c setDestroy.c setSize.c setGet.c \
   setUnion.c setIntersection.c setIsElement.c setIsEqual.c \
   setIsSubset.c setIsEmpty.c 
 
-OBJS = setNew.o setInit.o setDestroy.o setSize.o setGet.o \
+OBJS = setDisplay.o setInit.o setDestroy.o setSize.o setGet.o \
   setUnion.o setIntersection.o setIsElement.o setIsEqual.o \
   setIsSubset.o setIsEmpty.o 
 
