@@ -1,3 +1,14 @@
+/* Authors: Ian Kane, Tyler Gravlin, Tim Ham
+ * Date: 11112012
+ * 
+ * Function: setInit
+ * 
+ * Inputs: Set, Element[]
+ * Returns: 0:success, -1: failure
+ * Purpose: to create a linked list representing set of strings in the element
+ *          element argument
+ * Note: set argument is modified
+ */
 #include <stdlib.h>
 #include <string.h>
 
